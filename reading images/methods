@@ -1,0 +1,44 @@
+
+method:1
+
+
+# Imports PIL module
+from PIL import Image
+
+# open method used to open different extension image file
+im = Image.open(r"C:\Users\System-Pc\Desktop\ybear.jpg")
+
+# This method will show image in any image viewer
+im.show()
+
+
+method:2
+
+
+# Imports PIL module
+from PIL import Image
+
+# open method used to open different extension image file
+im = Image.open(r"C:\Users\System-Pc\Desktop\lion.png")
+
+# This method will show image in any image viewer
+im.show()
+
+
+method:3
+
+from PIL import Image
+import cv2
+import numpy as np
+import requests
+
+image=cv2.imread("/file path")
+//to read image interms of black color then put extra argument 0//
+//image=cv2.imread("file path ",0)//
+cv2_imshow(image)
+
+
+//to save image//
+
+cv2.imwrite('save_img.png,image)
+returns True if saved
